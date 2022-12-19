@@ -625,6 +625,7 @@ func (c Config) hasuraService() *types.ServiceConfig {
 				Protocol:  "tcp",
 			},
 		},
+                ExtraHosts: types.HostsList{"host.docker.internal:host-gateway",},
 		DependsOn: map[string]types.ServiceDependency{
 			SvcPostgres: {
 				Condition: types.ServiceConditionHealthy,
