@@ -17,7 +17,7 @@ import (
 )
 
 const (
-	testedDockerEngineVersion = "20.10.17"
+	testedDockerEngineVersion = "4.3.1"
 )
 
 type Launcher struct {
